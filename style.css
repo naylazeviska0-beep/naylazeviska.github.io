@@ -1,0 +1,62 @@
+```css
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+.cv {
+    width: 800px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    font-size: 14px;
+}
+
+td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+ul {
+    font-size: 14px;
+    line-height: 1.7;
+}
+```
