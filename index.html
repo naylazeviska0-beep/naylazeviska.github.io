@@ -1,119 +1,366 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>CV Mahasiswa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio Nayla Zeviska</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- CSS milik sendiri -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="cv">
+    <!-- 1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#beranda">
+                NAYLA
+            </a>
 
-        <div class="header">
-            <img src="foto.jpg" alt="Foto Profil">
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuNavbar"
+                    aria-controls="menuNavbar"
+                    aria-expanded="false"
+                    aria-label="Buka menu navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div>
-                <h1>NAYLA ZEVISKA ANGGIANI</h1>
-                <p>Mahasiswa Semester 3</p>
-                <p>Politeknik Manahijul Huda</p>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profil">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pendidikan">Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keahlian">Keahlian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <hr>
 
-        <h2>DATA DIRI</h2>
+    <!-- BERANDA -->
+    <header class="hero text-center py-5" id="beranda">
+        <div class="container py-4">
+            <img src="foto.jpg" alt="Foto Nayla Zeviska"
+                 class="foto-profil rounded-circle mb-3">
 
-        <table>
-            <tr>
-                <td>Nama</td>
-                <td>: Nayla Zeviska Anggiani</td>
-            </tr>
-            <tr>
-                <td>NIM</td>
-                <td>: 2501010</td>
-            </tr>
-            <tr>
-                <td>Tempat, Tanggal Lahir</td>
-                <td>: Tasikmalaya,03 November 2006</td>
-            </tr>
-            <tr>
-                <td>Alamat</td>
-                <td>: Kap.Tagog Des.Buniasih Kec.Kadipaten Kab.Tasikmalaya Provinsi.Jawa barat </td>
-            </tr>
-            <tr>
-                <td>No. HP</td>
-                <td>: 085869077067</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>: @naylazeviska0gmail.com</td>
-            </tr>
-        </table>
+            <h1 class="fw-bold">NAYLA ZEVISKA ANGGIANI</h1>
 
-        <h2>PROFIL</h2>
+            <p class="lead">
+                Mahasiswa Semester 3
+            </p>
 
-        <p>
-            Saya merupakan mahasiswi semester 3 Politeknik Manahijul Huda.
-            Saya memiliki ketertarikan pada bidang teknologi informasi,
-            komputer, dan pengembangan website. Saya senang mempelajari
-            hal-hal baru dan berusaha meningkatkan kemampuan dalam bidang teknologi.
+            <p>Teknologi Rekayasa Perangkat Lunak</p>
+
+            <a href="#profil" class="btn btn-dark mt-2">
+                Lihat Profil Saya
+            </a>
+        </div>
+    </header>
+
+
+    <main class="container py-5">
+
+        <!-- 2. CARD -->
+        <section id="profil" class="mb-5">
+            <h2 class="text-center mb-4">Profil Saya</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tentang Saya</h5>
+                            <p class="card-text">
+                                Saya merupakan mahasiswi semester 3
+                                Politeknik Manahijul Huda yang tertarik
+                                pada teknologi informasi dan komputer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Pendidikan</h5>
+                            <p class="card-text">
+                                Mahasiswa Program Studi Teknologi
+                                Rekayasa Perangkat Lunak di
+                                Politeknik Manahijul Huda.
+                            </p>
+                            <a href="#pendidikan" class="btn btn-dark">
+                                Lihat Pendidikan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Keahlian</h5>
+                            <p class="card-text">
+                                Mempelajari Microsoft Office, HTML,
+                                CSS, dan penggunaan komputer.
+                            </p>
+                            <a href="#keahlian" class="btn btn-dark">
+                                Lihat Keahlian
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- DATA DIRI -->
+        <section class="mb-5">
+            <h2 class="mb-3">Data Diri</h2>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <th>Nama</th>
+                        <td>Nayla Zeviska Anggiani</td>
+                    </tr>
+                    <tr>
+                        <th>NIM</th>
+                        <td>2501010</td>
+                    </tr>
+                    <tr>
+                        <th>Tempat, Tanggal Lahir</th>
+                        <td>Tasikmalaya, 03 November 2006</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td>
+                            Buniasih, Kadipaten, Kabupaten Tasikmalaya,
+                            Jawa Barat
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- 3. ACCORDION -->
+        <section id="pendidikan" class="mb-5">
+            <h2 class="text-center mb-4">Informasi Saya</h2>
+
+            <div class="accordion" id="accordionInformasi">
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#pendidikanSaya"
+                                aria-expanded="true"
+                                aria-controls="pendidikanSaya">
+                            Pendidikan
+                        </button>
+                    </h3>
+
+                    <div id="pendidikanSaya"
+                         class="accordion-collapse collapse show"
+                         data-bs-parent="#accordionInformasi">
+                        <div class="accordion-body">
+                            <strong>Politeknik Manahijul Huda</strong><br>
+                            Program Studi Teknologi Rekayasa Perangkat Lunak,
+                            Semester 3.
+
+                            <hr>
+
+                            <strong>SMA Terpadu Manahijul Huda</strong><br>
+                            Tahun lulus 2025.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="keahlian">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#keahlianSaya"
+                                aria-expanded="false"
+                                aria-controls="keahlianSaya">
+                            Keahlian
+                        </button>
+                    </h3>
+
+                    <div id="keahlianSaya"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionInformasi">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Microsoft Word</li>
+                                <li>Microsoft PowerPoint</li>
+                                <li>HTML dasar</li>
+                                <li>CSS dasar</li>
+                                <li>Penggunaan komputer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#pengalamanSaya"
+                                aria-expanded="false"
+                                aria-controls="pengalamanSaya">
+                            Pengalaman dan Hobi
+                        </button>
+                    </h3>
+
+                    <div id="pengalamanSaya"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#accordionInformasi">
+                        <div class="accordion-body">
+                            <strong>Pengalaman:</strong>
+                            <ul>
+                                <li>Mengerjakan tugas dan proyek perkuliahan.</li>
+                                <li>Membuat website sederhana menggunakan HTML dan CSS.</li>
+                                <li>Bekerja sama dalam tugas kelompok.</li>
+                            </ul>
+
+                            <strong>Hobi:</strong>
+                            <p>
+                                Belajar teknologi, membuat website,
+                                mendengarkan musik, dan mempelajari hal baru.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 4. CAROUSEL -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Galeri Portofolio</h2>
+
+            <div id="carouselPortofolio"
+                 class="carousel slide"
+                 data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button"
+                            data-bs-target="#carouselPortofolio"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"></button>
+
+                    <button type="button"
+                            data-bs-target="#carouselPortofolio"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+
+                    <button type="button"
+                            data-bs-target="#carouselPortofolio"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner rounded">
+
+                    <div class="carousel-item active">
+                        <div class="slide-portofolio text-center p-5">
+                            <h3>Belajar HTML</h3>
+                            <p>Mempelajari dasar pembuatan halaman website.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="slide-portofolio text-center p-5">
+                            <h3>Belajar CSS</h3>
+                            <p>Mengatur tampilan dan desain halaman website.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="slide-portofolio text-center p-5">
+                            <h3>Belajar Bootstrap</h3>
+                            <p>Membuat website responsif dengan komponen siap pakai.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselPortofolio"
+                        data-bs-slide="prev"
+                        aria-label="Slide sebelumnya">
+                    <span class="carousel-control-prev-icon"
+                          aria-hidden="true"></span>
+                </button>
+
+                <button class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselPortofolio"
+                        data-bs-slide="next"
+                        aria-label="Slide berikutnya">
+                    <span class="carousel-control-next-icon"
+                          aria-hidden="true"></span>
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- KONTAK -->
+        <section id="kontak" class="text-center mb-4">
+            <h2 class="mb-3">Kontak</h2>
+
+            <p>
+                Email: Gunakan alamat email aktif milikmu.
+            </p>
+
+            <p>
+                Nomor HP: Gunakan nomor yang ingin kamu tampilkan.
+            </p>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">
+            &copy; 2026 Nayla Zeviska Anggiani - Portofolio Mahasiswa
         </p>
+    </footer>
 
-        <h2>PENDIDIKAN</h2>
 
-        <ul>
-            <li>
-                <b>Politeknik Manahijul Huda</b><br>
-                Program Studi: Teknologi Rekayasa Perangkat Lunak<br>
-                Semester 3
-            </li>
-            <br>
-            <li>
-                <b>SMA Terpadu Manahijul Huda</b><br>
-                Tahun Lulus: 2025
-            </li>
-        </ul>
-
-        <h2>KEAHLIAN</h2>
-
-        <ul>
-            <li>Microsoft Word</li>
-            <li>Microsoft PowerPoint</li>
-            <li>HTML dasar</li>
-            <li>CSS dasar</li>
-            <li>Penggunaan komputer</li>
-        </ul>
-
-        <h2>PENGALAMAN</h2>
-
-        <ul>
-            <li>
-                Mengerjakan tugas dan proyek perkuliahan.
-            </li>
-            <li>
-                Membuat website sederhana menggunakan HTML dan CSS.
-            </li>
-            <li>
-                Bekerja sama dalam tugas kelompok.
-            </li>
-        </ul>
-
-        <h2>HOBI</h2>
-
-        <p>
-            Belajar teknologi, membuat website, mendengarkan musik,
-            dan mempelajari hal-hal baru.
-        </p>
-
-        <h2>KONTAK</h2>
-
-        <p>
-            Email: @naylazeviska0gmail<br>
-            No. HP: 085869077067
-        </p>
-
-    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
+```
