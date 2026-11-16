@@ -359,6 +359,120 @@
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CV NAYLA</a>
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse" data-bs-target="#menuCV">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuCV">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CAROUSEL -->
+<h3 class="text-center mt-4">Selamat Datang di CV Saya</h3>
+<div id="carouselCV" class="carousel slide mb-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="p-5 text-center bg-dark text-white">
+        <h2>Profil Pribadi</h2>
+        <p>Mengenal lebih dekat tentang diri saya</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="p-5 text-center bg-secondary text-white">
+        <h2>Riwayat Pendidikan</h2>
+        <p>Perjalanan pendidikan saya</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="p-5 text-center bg-primary text-white">
+        <h2>Terus Belajar</h2>
+        <p>Berusaha mengembangkan kemampuan dan pengalaman</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button"
+    data-bs-target="#carouselCV" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button"
+    data-bs-target="#carouselCV" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- TABLE -->
+<section id="pendidikan" class="mb-4">
+  <h3>Riwayat Pendidikan</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>No</th>
+          <th>Jenjang</th>
+          <th>Keterangan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>SD</td><td>Pendidikan Dasar</td></tr>
+        <tr><td>2</td><td>SMP</td><td>Pendidikan Menengah Pertama</td></tr>
+        <tr><td>3</td><td>SMK/SMA</td><td>Pendidikan Menengah Atas</td></tr>
+        <tr><td>4</td><td>Politeknik</td><td>Teknologi Rekayasa Perangkat Lunak</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- COLLAPSIBLE -->
+<section class="mb-4">
+  <h3>Tentang Saya</h3>
+  <button class="btn btn-dark" type="button"
+    data-bs-toggle="collapse" data-bs-target="#tentangSaya">
+    Lihat Selengkapnya
+  </button>
+  <div class="collapse mt-3" id="tentangSaya">
+    <div class="card card-body">
+      Saya adalah mahasiswa Program Studi Teknologi Rekayasa
+      Perangkat Lunak di Politeknik Manahijul Huda.
+      Saya tertarik mempelajari teknologi, pemrograman,
+      dan pengembangan website.
+    </div>
+  </div>
+</section>
+
+<!-- JQUERY HIDE / SHOW -->
+<section id="kontak" class="mb-4">
+  <h3>Informasi Kontak</h3>
+  <button id="tombolKontak" class="btn btn-primary">
+    Tampilkan / Sembunyikan Kontak
+  </button>
+  <div id="infoKontak" class="alert alert-info mt-3">
+    Nama: Nayla Zeviska Anggiani<br>
+    Program Studi: Teknologi Rekayasa Perangkat Lunak
+  </div>
+</section>
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#tombolKontak").click(function(){
+      $("#infoKontak").fadeToggle(500);
+    });
+  });
+</script>
+</body>
+</html>
 
 </body>
 </html>
